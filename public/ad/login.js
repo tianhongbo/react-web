@@ -1,7 +1,5 @@
 'use strict';
 
-import React from 'React';
-
 var LoginSelector = React.createClass({
   signIn: function () {
     var email = this.refs.email.getDOMNode().value.trim();
@@ -18,7 +16,15 @@ var LoginSelector = React.createClass({
   },
   render: function () {
     return (
-        
+<section>
+    <div className="login-title">
+        <img/>
+    </div>
+    <div className="login-info">
+        <input type="input" className="" placeholder="username" />
+        <input type="input" className=""  placeholder="username" />
+    </div>
+</section>
         
     //   <article className="hold-transition login-page loginSelector">
     //     <div className="login-box">
