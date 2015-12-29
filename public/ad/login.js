@@ -16,13 +16,13 @@ var LoginSelector = React.createClass({
   },
   render: function () {
     return (
-<section>
+<section className="login-container">
     <div className="login-title">
-        <img/>
+       ????
     </div>
     <div className="login-info">
         <input type="input" className="" placeholder="username" />
-        <input type="input" className=""  placeholder="username" />
+        <input type="input" className=""  placeholder="password" />
     </div>
 </section>
         
