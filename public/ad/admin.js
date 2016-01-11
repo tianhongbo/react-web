@@ -1,5 +1,20 @@
 'use strict';
 
+var CommentBox = React.createClass({
+    render: function() {
+        return (
+            <div className="commentBox">
+                Hello, world! I am a CommentBox.
+            </div>
+        );
+    }
+});
+ReactDOM.render(
+    <CommentBox />,
+    document.getElementById('admin')
+);
+
+/*
 var utils = require('../js/utils');
 
 var React = require('react');
@@ -19,18 +34,35 @@ var HeaderSelector = require('./frame/header');
 var SideBarSelector = require('./frame/sidebar');
 var FooterSelector = require('./frame/footer');
 var NavMapSelector = require('./frame/navmap');
+var ContentSelector = React.createClass({
+    render: function () {
+        return {};
+    }
+});
 
+var App = React.createClass({
+    render: function () {
+        return {};
+    }
+});
+*/
+var RouteHandler = React.createClass({
+    render: function () {
+        return (<div></div>);
+    }
+});
 var ContentSelector = React.createClass({
   render: function () {
-    return (<div id="frame-content">
-      <div className="content-wrapper">
-        <NavMapSelector/>
+    return (
+        <div id="frame-content">
+          <div className="content-wrapper">
+            <NavMapSelector />
 
-        <div id="content">
-          <RouteHandler/>
-        </div>
-      </div>
-    </div>)
+            <div id="content">
+              <RouteHandler />
+            </div>
+          </div>
+        </div>)
   }
 });
 
@@ -38,15 +70,24 @@ var App = React.createClass({
   render: function () {
     return (
       <div className="wrapper">
-        <HeaderSelector/>
-        <SideBarSelector/>
-        <ContentSelector/>
-        <FooterSelector/>
+          <HeaderSelector />
+          <SideBarSelector />
+          <ContentSelector />
+          <FooterSelector />
       </div>
     )
   }
 });
 
+/*
+ //        <HeaderSelector />
+ //        <SideBarSelector />
+ //        <ContentSelector />
+ //       <FooterSelector />
+ */
+
+ReactDOM.render(<App />, document.getElementById('admin'));
+/*
 ReactRouter.run(<Route path="/" handler={App}>
 
   <DefaultRoute handler={ProfileSelector}/>
@@ -59,7 +100,6 @@ ReactRouter.run(<Route path="/" handler={App}>
 
   <NotFoundRoute handler={Error500}/>
 </Route>, ReactRouter.HashLocation, function (Root) {
-  React.render(<Root/>, document.body);
+  //React.render(<Root/>, document.getElementById('admin'));
 });
-
-
+*/

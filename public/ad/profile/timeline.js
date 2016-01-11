@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var colors = [
   'bg-red,',
@@ -118,4 +118,4 @@ function round(t) {
 
 //  component.TimelineSelector = TimelineSelector;
 
-module.exports = TimelineSelector
+//module.exports = TimelineSelector

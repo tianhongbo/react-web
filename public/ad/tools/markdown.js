@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var MarkdownSelector = React.createClass({
   componentDidUpdate: function () {
@@ -33,4 +33,4 @@ var MarkdownSelector = React.createClass({
 
 //component.MarkdownSelector = MarkdownSelector;
 
-module.exports = MarkdownSelector;
+//module.exports = MarkdownSelector;

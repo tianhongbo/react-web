@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var ProfileSelector = React.createClass({
   render: function () {
@@ -75,4 +75,4 @@ var ProfileSelector = React.createClass({
 
 //  component.ProfileSelector = ProfileSelector;
 
-module.exports =ProfileSelector;
+//module.exports =ProfileSelector;

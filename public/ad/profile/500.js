@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var Error500 = React.createClass({
   render: function () {
@@ -19,4 +19,4 @@ var Error500 = React.createClass({
 
 //  component.Error500 = Error500;
 
-module.exports = Error500;
+//module.exports = Error500;

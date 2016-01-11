@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var HeaderSelector = React.createClass({
   render: function () {
@@ -51,4 +51,5 @@ var HeaderSelector = React.createClass({
 
 //component.HeaderSelector = HeaderSelector;
 
-module.exports = HeaderSelector;
+//module.exports = HeaderSelector;
+window.HeaderSelector=HeaderSelector;

@@ -9,12 +9,12 @@
             <div className="modal-content">
               <div className="modal-header">
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span
-                  aria-hidden="true">¡Á</span>
+                  aria-hidden="true">ï¿½ï¿½</span>
                 </button>
                 <h4 className="modal-title">Modal Success</h4>
               </div>
               <div className="modal-body">
-                <p>One fine body¡­</p>
+                <p>One fine bodyï¿½ï¿½</p>
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-outline pull-left" data-dismiss="modal">Close</button>
@@ -27,8 +27,8 @@
     }
   });
 
-  component.ModalDialog = ModalDialog;
-
+  //component.ModalDialog = ModalDialog;
+/*
   service.showDialog = function () {
     React.render(<ModalDialog />, document.getElementById('content'));
   };
@@ -36,5 +36,5 @@
   service.hideDialog = function () {
     $('#modal-dialog').remove();
   };
-
+*/
 })();

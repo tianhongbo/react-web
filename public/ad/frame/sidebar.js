@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var NavigatorItemSelector = React.createClass({
 
@@ -63,7 +63,7 @@ var SideBarSelector = React.createClass({
     return <aside className="main-sidebar">
       <section className="sidebar">
         <a href="#" className="logo">
-          <img src="images/react-web.png" className="width:170px"/>
+          <img src="images/huami-usa.png" className="width:170px"/>
 
         </a>
 
@@ -84,8 +84,10 @@ var SideBarSelector = React.createClass({
 
 //  component.NavigatorSelector = NavigatorSelector;
 //  component.SideBarSelector = SideBarSelector;
-
-module.exports = {
+/*
   NavigatorSelector: NavigatorSelector,
   SideBarSelector: SideBarSelector
 };
+    */
+
+window.SideBarSelector = SideBarSelector;

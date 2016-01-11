@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var NavMapSelector = React.createClass({
   getInitialState: function () {
@@ -28,4 +28,5 @@ var NavMapSelector = React.createClass({
   }
 });
 
-module.exports = NavMapSelector;
+//module.exports = NavMapSelector;
+window.NavMapSelector = NavMapSelector;

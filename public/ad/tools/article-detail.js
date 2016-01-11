@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+//var React = require('react');
 
 var ArticleDetailSelector = React.createClass({
   getInitialState: function () {
@@ -61,4 +61,4 @@ var ArticleDetailSelector = React.createClass({
 
 //component.ArticleDetailSelector = ArticleDetailSelector;
 
-module.exports = ArticleDetailSelector;
+//module.exports = ArticleDetailSelector;

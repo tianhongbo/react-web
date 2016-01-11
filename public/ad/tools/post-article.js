@@ -1,6 +1,6 @@
 'use strict';
-var React = require('react');
-var MarkdownSelector = require('./markdown');
+//var React = require('react');
+//var MarkdownSelector = require('./markdown');
 
 var _id;
 var PostCategorySelector = React.createClass({
@@ -118,7 +118,9 @@ var PostArticleSelector = React.createClass({
   }
 });
 
+/*
 module.exports = {
   PostCategorySelector: PostCategorySelector,
   PostArticleSelector: PostArticleSelector
 };
+    */

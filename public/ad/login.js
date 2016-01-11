@@ -10,7 +10,7 @@ var LoginSelector = React.createClass({
     //send to server
     $.post('/api/signIn', {email: email, password: password}, function (data) {
       if (data.code === '8000') {
-        window.location.href = '/admin';
+        window.location.href = '/amdin';
       }
     }.bind(this));
   },
