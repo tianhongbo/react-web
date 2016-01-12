@@ -124,3 +124,5 @@ module.exports = {
   PostArticleSelector: PostArticleSelector
 };
     */
+
+window.PostArticleSelector=PostArticleSelector;

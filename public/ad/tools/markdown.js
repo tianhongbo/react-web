@@ -34,3 +34,4 @@ var MarkdownSelector = React.createClass({
 //component.MarkdownSelector = MarkdownSelector;
 
 //module.exports = MarkdownSelector;
+window.MarkdownSelector=MarkdownSelector;

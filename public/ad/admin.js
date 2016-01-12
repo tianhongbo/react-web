@@ -1,19 +1,5 @@
 'use strict';
 
-var CommentBox = React.createClass({
-    render: function() {
-        return (
-            <div className="commentBox">
-                Hello, world! I am a CommentBox.
-            </div>
-        );
-    }
-});
-ReactDOM.render(
-    <CommentBox />,
-    document.getElementById('admin')
-);
-
 /*
 var utils = require('../js/utils');
 
@@ -46,11 +32,13 @@ var App = React.createClass({
     }
 });
 */
-var RouteHandler = React.createClass({
-    render: function () {
-        return (<div></div>);
-    }
-});
+var ReactRouter = window.ReactRouter;
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
+var RouteHandler = ReactRouter.RouteHandler;
+var DefaultRoute = ReactRouter.DefaultRoute;
+var NotFoundRoute = ReactRouter.NotFoundRoute;
+
 var ContentSelector = React.createClass({
   render: function () {
     return (
@@ -58,14 +46,32 @@ var ContentSelector = React.createClass({
           <div className="content-wrapper">
             <NavMapSelector />
 
-            <div id="content">
-              <RouteHandler />
-            </div>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
           </div>
         </div>)
   }
 });
 
+/*
+ var ContentSelector = React.createClass({
+ render: function () {
+ return (
+ <div id="frame-content">
+ <div className="content-wrapper">
+ <NavMapSelector />
+
+ <div id="content">
+ <RouteHandler />
+ </div>
+ </div>
+ </div>)
+ }
+ });
+
+*/
 var App = React.createClass({
   render: function () {
     return (
@@ -80,14 +86,6 @@ var App = React.createClass({
 });
 
 /*
- //        <HeaderSelector />
- //        <SideBarSelector />
- //        <ContentSelector />
- //       <FooterSelector />
- */
-
-ReactDOM.render(<App />, document.getElementById('admin'));
-/*
 ReactRouter.run(<Route path="/" handler={App}>
 
   <DefaultRoute handler={ProfileSelector}/>
@@ -100,6 +98,21 @@ ReactRouter.run(<Route path="/" handler={App}>
 
   <NotFoundRoute handler={Error500}/>
 </Route>, ReactRouter.HashLocation, function (Root) {
-  //React.render(<Root/>, document.getElementById('admin'));
+  ReactDOM.render(<Root/>, document.getElementById('admin'));
 });
 */
+const routes = {
+    path: '/',
+    component: App,
+    indexRoute: { component: App },
+    childRoutes: [
+        { path: "profile", component: ProfileSelector},
+        { path: "timeline/:categoryId", component: TimelineSelector},
+        { path: "postarticle", component: PostArticleSelector},
+        { path: "articledetail/:id", component: ArticleDetailSelector},
+        { path: "editdetail/:id", component: PostArticleSelector},
+        { path: "*", component: Error500}
+    ]
+};
+
+ReactDOM.render(<Router routes={routes} />, document.getElementById('admin'));

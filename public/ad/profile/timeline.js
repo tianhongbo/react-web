@@ -119,3 +119,4 @@ function round(t) {
 //  component.TimelineSelector = TimelineSelector;
 
 //module.exports = TimelineSelector
+window.TimelineSelector=TimelineSelector;

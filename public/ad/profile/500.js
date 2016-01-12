@@ -20,3 +20,4 @@ var Error500 = React.createClass({
 //  component.Error500 = Error500;
 
 //module.exports = Error500;
+window.Error500=Error500;

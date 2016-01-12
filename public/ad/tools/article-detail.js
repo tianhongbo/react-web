@@ -62,3 +62,4 @@ var ArticleDetailSelector = React.createClass({
 //component.ArticleDetailSelector = ArticleDetailSelector;
 
 //module.exports = ArticleDetailSelector;
+window.ArticleDetailSelector=ArticleDetailSelector;

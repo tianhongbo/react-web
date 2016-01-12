@@ -11,37 +11,47 @@ var HeaderSelector = React.createClass({
 
         <div className="navbar-custom-menu">
           <ul className="nav navbar-nav">
+            <li>
+              <a href="/admin#/postarticle" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
+                Post-Article</a>
+            </li>
+            <li>
+              <a href="/login" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
+                Login</a>
+            </li>
+
+            <li>
+              <a href="/signup" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
+                Signup</a>
+            </li>
+
             <li className="dropdown user user-menu">
               <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                <img src="images/me64X64.ico" className="user-image" alt="User Image"/>
-                <span className="hidden-xs">Alexander Pierce</span>
+                <img src="images/i64X64.ico" className="user-image" alt="User Image"/>
+                <span className="hidden-xs">Mike Lee</span>
               </a>
               <ul className="dropdown-menu">
                 <li className="user-header">
-                  <img src="images/me64X64.ico" className="img-circle" alt="User Image"/>
+                  <img src="images/i64X64.ico" className="img-circle" alt="User Image"/>
                   <p>
-                    Microlv - Web Developer
-                    <small>2009 - 2015</small>
+                    Software Engineer
+                    <small>I love Huami</small>
                   </p>
                 </li>
                 <li className="user-body">
-                  <div className="col-xs-12 text-center">
-                  </div>
+                  <div className="col-xs-12 text-center"></div>
                 </li>
                 <li className="user-footer">
                   <div>
                     <a href="#" className="btn btn-default btn-flat">Profile</a>
-                    <a href="https://github.com/microlv" className="btn btn-default btn-flat"
+                    <a href="https://github.com/tianhongbo" className="btn btn-default btn-flat"
                        target="_blank">Followers</a>
                     <a href="#" className="btn btn-default btn-flat">Sign out</a>
                   </div>
                 </li>
               </ul>
             </li>
-            <li>
-              <a href="/admin#/postarticle" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
-                Post-Article</a>
-            </li>
+
           </ul>
         </div>
       </nav>
