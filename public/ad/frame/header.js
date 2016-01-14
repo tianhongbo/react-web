@@ -5,14 +5,23 @@
 var HeaderSelector = React.createClass({
   render: function () {
     return <header className="main-header">
+
+      <a href="#" className="logo">
+        <span className="logo-mini"><b>Huami</b></span>
+        <span className="logo-lg"><img src="images/huami-usa.png" className="width:170px"/></span>
+      </a>
+
+
       <nav className="navbar navbar-static-top" role="navigation">
+
         <a href="#" className="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span className="sr-only">Toggle navigation</span>
         </a>
 
         <div className="navbar-custom-menu">
           <ul className="nav navbar-nav">
             <li>
-              <a href="/admin#/postarticle" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
+              <a href="#/postarticle" data-toggle="control-sidebar"><i className="fa fa-edit"></i>
                 Post-Article</a>
             </li>
             <li>

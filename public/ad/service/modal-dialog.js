@@ -28,6 +28,7 @@
   });
 
   //component.ModalDialog = ModalDialog;
+  window.ModalDialog=ModalDialog;
 /*
   service.showDialog = function () {
     React.render(<ModalDialog />, document.getElementById('content'));

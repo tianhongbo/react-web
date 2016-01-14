@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MongoConfiguration">
+    <option name="serverConfigurations">
+      <list>
+        <ServerConfiguration>
+          <option name="connectOnIdeStartup" value="true" />
+          <option name="label" value="huami-us-mongolab" />
+          <option name="password" value="guest" />
+          <option name="serverUrls">
+            <list>
+              <option value="ds056698.mongolab.com:56698" />
+            </list>
+          </option>
+          <option name="userDatabase" value="huami-us" />
+          <option name="username" value="guest" />
+        </ServerConfiguration>
+      </list>
+    </option>
+  </component>
+</project>

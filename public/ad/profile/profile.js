@@ -8,10 +8,10 @@ var ProfileSelector = React.createClass({
             <div className="col-md-3">
                 <div className="box box-primary">
                     <div className="box-body box-profile">
-                        <img className="profile-user-img img-responsive img-circle" src="../images/me.jpg"
+                        <img className="profile-user-img img-responsive img-circle" src="../images/i64x64.ico"
                              alt="User profile picture"/>
 
-                        <h3 className="profile-username text-center">Andy.lv</h3>
+                        <h3 className="profile-username text-center">Mike Lee</h3>
 
                         <p className="text-muted text-center">Web-Nodejs-Js Engineer</p>
 
@@ -40,14 +40,14 @@ var ProfileSelector = React.createClass({
                         <strong><i className="fa fa-book margin-r-5"></i> Education</strong>
 
                         <p className="text-muted">
-                            中山大学
+                            China University
                         </p>
 
                         <hr/>
 
                         <strong><i className="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-                        <p className="text-muted">广东，深圳</p>
+                        <p className="text-muted">Mountain View, CA</p>
 
                         <hr/>
 
@@ -65,7 +65,7 @@ var ProfileSelector = React.createClass({
 
                         <strong><i className="fa fa-file-text-o margin-r-5"></i> Notes</strong>
 
-                        <p>欢迎来搞~</p>
+                        <p>I love Huami!~</p>
                     </div>
                 </div>
             </div>

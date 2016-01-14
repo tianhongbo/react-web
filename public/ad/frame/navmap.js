@@ -5,14 +5,14 @@
 var NavMapSelector = React.createClass({
   getInitialState: function () {
     return {
-      category: '',
-      first: '',
-      second: '',
-      third: ''
+      category: 'abc',
+      first: 'x',
+      second: 'y',
+      third: 'z'
     };
   },
   componentWillReceiveProps: function (nextProps) {
-    console.log('nav map!!!');
+    console.log('NavMapSelector!!!');
   },
   render: function () {
     return <section className="content-header">

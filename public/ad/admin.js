@@ -42,18 +42,27 @@ var NotFoundRoute = ReactRouter.NotFoundRoute;
 var ContentSelector = React.createClass({
   render: function () {
     return (
-        <div id="frame-content">
           <div className="content-wrapper">
-            <NavMapSelector />
-
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-
-
+              {this.props.children}
           </div>
-        </div>)
+    );
   }
 });
+
+const routes = {
+    path: '/',
+    component: ContentSelector,
+    indexRoute: { component: ProfileSelector },
+    childRoutes: [
+        { path: "profile", component: ProfileSelector},
+        { path: "timeline/:categoryId", component: TimelineSelector},
+        { path: "postarticle", component: PostArticleSelector},
+        { path: "articledetail/:id", component: ArticleDetailSelector},
+        { path: "editdetail/:id", component: PostArticleSelector},
+        { path: "*", component: Error500}
+    ]
+};
+
 
 /*
  var ContentSelector = React.createClass({
@@ -78,7 +87,7 @@ var App = React.createClass({
       <div className="wrapper">
           <HeaderSelector />
           <SideBarSelector />
-          <ContentSelector />
+          <Router routes={routes} />
           <FooterSelector />
       </div>
     )
@@ -101,18 +110,4 @@ ReactRouter.run(<Route path="/" handler={App}>
   ReactDOM.render(<Root/>, document.getElementById('admin'));
 });
 */
-const routes = {
-    path: '/',
-    component: App,
-    indexRoute: { component: App },
-    childRoutes: [
-        { path: "profile", component: ProfileSelector},
-        { path: "timeline/:categoryId", component: TimelineSelector},
-        { path: "postarticle", component: PostArticleSelector},
-        { path: "articledetail/:id", component: ArticleDetailSelector},
-        { path: "editdetail/:id", component: PostArticleSelector},
-        { path: "*", component: Error500}
-    ]
-};
-
-ReactDOM.render(<Router routes={routes} />, document.getElementById('admin'));
+ReactDOM.render(<App />, document.getElementById('admin'));

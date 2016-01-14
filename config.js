@@ -7,5 +7,7 @@
 //process.env.release = true;
 
 module.exports = {
-  dbconnect: 'mongodb://127.0.0.1/reactweb'
+  //dbconnect: 'mongodb://127.0.0.1/reactweb'
+  //hosting on mongolab
+  dbconnect: 'mongodb://ds056698.mongolab.com:56698/huami-us'
 };

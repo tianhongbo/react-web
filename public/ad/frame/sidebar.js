@@ -106,7 +106,6 @@ var SideBarSelector = React.createClass({
       <section className="sidebar">
         <a href="#" className="logo">
           <img src="images/huami-usa.png" className="width:170px"/>
-
         </a>
 
         <div className="user-panel">
@@ -118,7 +117,7 @@ var SideBarSelector = React.createClass({
             <a href="https://github.com/tianhongbo"><i className="fa fa-circle text-success"></i>Fork me on Github</a>
           </div>
         </div>
-        <NavigatorSelector/>
+        <NavigatorSelector />
       </section>
     </aside>;
   }
